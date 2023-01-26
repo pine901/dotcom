@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+   >
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/dp_150"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rltv">
+
+
+        <androidx.viewpager.widget.ViewPager
+
+            android:id="@+id/welcome_viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_500"
+            android:layout_marginTop="@dimen/dp_10"
+          >
+
+
+        </androidx.viewpager.widget.ViewPager>
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabView"
+            android:layout_marginTop="@dimen/dp_5"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_5"
+            android:layout_below="@+id/welcome_viewpager"
+            app:tabBackground="@drawable/tab_selector"
+            app:tabGravity="center"
+            app:tabMinWidth="@dimen/dp_50"
+
+            app:tabIndicatorHeight="0dp" />
+
+
+
+        <TextView
+            android:id="@+id/txtNext"
+            android:layout_width="@dimen/dp_100"
+            android:layout_height="@dimen/dp_40"
+android:visibility="gone"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="@dimen/dp_30"
+            android:layout_marginTop="@dimen/dp_30"
+            android:layout_marginEnd="@dimen/dp_30"
+            android:layout_marginBottom="@dimen/dp_20"
+            android:gravity="center"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_17">
+
+        </TextView>
+
+        <ImageView
+            android:id="@+id/imgBack"
+            android:visibility="gone"
+            android:layout_width="@dimen/dp_25"
+            android:layout_height="@dimen/dp_25"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="@dimen/dp_30"
+
+            android:layout_marginBottom="@dimen/dp_30"
+            >
+
+        </ImageView>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rltv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_130">
+
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="@dimen/dp_200"
+            android:layout_height="@dimen/dp_100"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="@dimen/dp_10"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/logo" />
+        <ImageView
+            android:layout_toStartOf="@+id/txtGetStart"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:layout_width="@dimen/dp_15"
+            android:layout_marginEnd="@dimen/dp_20"
+            android:layout_height="@dimen/dp_15"
+            android:src="@drawable/back_dotted_icon"/>
+
+        <TextView
+            android:id="@+id/txtGetStart"
+            android:layout_marginEnd="@dimen/dp_45"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/skip"
+            android:textStyle="bold"
+            android:textSize="@dimen/sp_17"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageView2"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

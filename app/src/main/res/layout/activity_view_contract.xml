@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:id="@+id/llTop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="@dimen/dp_25"
+            android:layout_height="@dimen/dp_25"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/dp_10"
+            android:rotation="360"
+            android:src="@drawable/next_arrow" />
+
+        <ImageView
+            android:layout_width="@dimen/dp_200"
+
+            android:layout_height="@dimen/dp_120"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"
+            android:src="@drawable/logo" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/dp_10"
+android:layout_margin="@dimen/dp_15"
+
+        android:background="@drawable/gray_background_icon"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/llTop">
+
+        <TextView
+            android:id="@+id/imgLogo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dp_70"
+            android:fontFamily="@font/rubik_semibold"
+            android:gravity="center"
+            android:padding="@dimen/dp_10"
+            android:text="@string/agreement_near_0001"
+            android:textColor="@color/app_main_color"
+            android:textSize="@dimen/sp_22" />
+
+        <ImageView
+            android:layout_width="@dimen/dp_20"
+            android:layout_height="@dimen/dp_20"
+            android:layout_alignParentStart="true"
+
+            android:layout_marginStart="@dimen/dp_20"
+            android:layout_marginTop="@dimen/dp_20"
+            android:layout_marginEnd="@dimen/dp_20"
+            android:layout_marginBottom="@dimen/dp_20"
+            android:src="@drawable/cancel_icon" />
+
+        <TextView
+            android:id="@+id/txtWelcome"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_500"
+            android:layout_below="@+id/imgLogo"
+            android:layout_marginStart="@dimen/dp_10"
+            android:layout_marginEnd="@dimen/dp_10"
+            android:fontFamily="@font/rubik_semibold"
+            android:gravity="right"
+            android:padding="@dimen/dp_20"
+            android:scrollbarSize="@dimen/dp_10"
+            android:scrollbars="vertical"
+            android:text="@string/contract_msg"
+            android:textColor="@color/app_main_color"
+            android:textSize="@dimen/sp_16"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/btnSend"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtWelcome"
+            android:layout_marginStart="@dimen/dp_100"
+            android:layout_marginEnd="@dimen/dp_100"
+            android:background="@drawable/button_bg"
+            android:fontFamily="@font/rubik_regular"
+            android:text="@string/send"
+            android:layout_marginTop="-80dp"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_18"
+            />
+
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

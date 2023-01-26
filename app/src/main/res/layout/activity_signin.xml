@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <RelativeLayout
+            android:id="@+id/llTop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:layout_width="@dimen/dp_25"
+                android:layout_height="@dimen/dp_25"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/dp_10"
+                android:rotation="360"
+                android:src="@drawable/next_arrow" />
+
+
+            <ImageView
+                android:layout_width="@dimen/dp_200"
+                android:layout_height="@dimen/dp_120"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:scaleType="centerCrop"
+                android:src="@drawable/logo" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/linearView"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/llTop">
+
+            <TextView
+                android:id="@+id/txt1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_20"
+                android:layout_marginTop="@dimen/dp_10"
+                android:fontFamily="@font/rubik_semibold"
+                android:lineSpacingExtra="4dp"
+                android:text="@string/welcome_back"
+                android:textColor="@color/lite_black"
+                android:textSize="@dimen/sp_33" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt1"
+                android:layout_marginStart="@dimen/dp_20"
+                android:layout_marginTop="@dimen/dp_5"
+                android:fontFamily="@font/rubik_regular"
+                android:lineSpacingExtra="4dp"
+                android:text="@string/to_connect"
+                android:textColor="@color/select_dot_color"
+                android:textSize="@dimen/sp_33" />
+
+            <ImageView
+                android:layout_width="@dimen/dp_220"
+                android:layout_height="@dimen/dp_270"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="@dimen/dp_10"
+                android:layout_marginEnd="@dimen/dp_20"
+                android:scaleType="centerCrop"
+                android:src="@drawable/login_screen_icon" />
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/dp_10"
+
+            android:background="@drawable/user_type_back_image"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearView">
+
+            <LinearLayout
+                android:id="@+id/ll1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_20"
+                android:layout_marginTop="@dimen/dp_10"
+                android:layout_marginRight="@dimen/dp_20"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/rubik_medium"
+                    android:text="@string/phone_number"
+
+                    android:textColor="@color/hint_color"
+                    android:textSize="@dimen/sp_16" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_40"
+                    android:layout_marginTop="@dimen/dp_5"
+                    android:background="@drawable/form"
+                    android:padding="@dimen/dp_4"
+                    android:textColorHint="@color/gray_lite"
+                    android:textSize="@dimen/sp_14" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll12"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/dp_20"
+                android:layout_marginTop="@dimen/dp_10"
+                android:layout_marginRight="@dimen/dp_20"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/rubik_medium"
+                    android:text="@string/password"
+
+                    android:textColor="@color/hint_color"
+                    android:textSize="@dimen/sp_16" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_40"
+                    android:layout_marginTop="@dimen/dp_5"
+                    android:background="@drawable/form"
+                    android:fontFamily="@font/rubik_medium"
+                    android:padding="@dimen/dp_4"
+                    android:textColor="@color/select_dot_color"
+
+                    android:textColorHint="@color/gray_lite"
+                    android:textSize="@dimen/sp_16" />
+
+
+                <RelativeLayout
+                    android:id="@+id/relativeForgot"
+                    android:layout_width="match_parent"
+
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_10">
+
+                    <TextView
+                        android:id="@+id/txtForgotpass"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/dp_4"
+                        android:layout_toEndOf="@+id/imgInfo"
+                        android:fontFamily="@font/rubik_semibold"
+                        android:lineSpacingExtra="4dp"
+                        android:text="@string/forgot_password"
+                        android:textColor="@color/select_dot_color"
+                        android:textSize="@dimen/sp_16" />
+
+                    <ImageView
+                        android:id="@+id/imgInfo"
+                        android:layout_width="@dimen/dp_20"
+                        android:layout_height="@dimen/dp_20"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="@dimen/dp_5"
+                        android:src="@drawable/info_icon">
+
+
+                    </ImageView>
+                </RelativeLayout>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_30"
+                    app:cardCornerRadius="@dimen/dp_20"
+                    app:cardElevation="@dimen/dp_4"
+                    app:cardUseCompatPadding="true"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/ll7">
+
+
+                    <Button
+                        android:id="@+id/btnLogin"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/button_bg"
+                        android:fontFamily="@font/rubik_regular"
+                        android:text="@string/continued"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/sp_18" />
+                </androidx.cardview.widget.CardView>
+
+
+                <TextView
+                    android:id="@+id/txtNoAccount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_20"
+                    android:fontFamily="@font/rubik_medium"
+                    android:gravity="center"
+                    android:text="@string/already_account"
+
+                    android:textColor="@color/hint_color"
+                    android:textSize="@dimen/sp_16" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

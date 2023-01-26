@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".loginmodule.UserTypeActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/llTop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_centerVertical="true"
+            android:layout_width="@dimen/dp_25"
+            android:layout_height="@dimen/dp_25"
+            android:layout_gravity="center"
+            android:rotation="360"
+            android:layout_marginStart="@dimen/dp_10"
+            android:src="@drawable/next_arrow" />
+
+        <ImageView
+            android:layout_centerInParent="true"
+            android:layout_width="@dimen/dp_200"
+            android:layout_height="@dimen/dp_140"
+            android:layout_gravity="center"
+            android:src="@drawable/logo" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp_20"
+        android:fontFamily="@font/rubik_regular"
+        android:gravity="center"
+        android:lineSpacingExtra="4dp"
+        android:text="@string/enter_phone_forgot"
+        android:textColor="@color/app_main_color"
+        android:textSize="@dimen/sp_18"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/llTop" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/dp_30"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+        <RelativeLayout
+            android:gravity="center"
+            android:id="@+id/relativeRecommend"
+            android:layout_margin="@dimen/dp_20"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_80">
+
+
+            <EditText
+                android:id="@+id/edtNumber"
+                android:inputType="number"
+
+                android:layout_centerVertical="true"
+                android:layout_width="@dimen/dp_250"
+                android:layout_height="@dimen/dp_40">
+
+            </EditText>
+
+            <EditText
+                android:inputType="number"
+                android:layout_marginStart="@dimen/dp_20"
+                android:layout_toEndOf="@+id/edtNumber"
+                android:layout_centerVertical="true"
+                android:layout_width="@dimen/dp_60"
+                android:layout_height="@dimen/dp_40">
+
+            </EditText>
+        </RelativeLayout>
+
+
+
+
+
+        <Button
+            android:id="@+id/btnSend"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp_30"
+            android:background="@drawable/button_bg"
+            android:fontFamily="@font/rubik_regular"
+            android:text="@string/send"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_14"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ll7" />
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Work/dotkom3-refer-android-d965457e80ff/dotkom3-refer-android-d965457e80ff/app/src/main/res/layout/activity_base.xml" value="0.18802083333333333" />
+        <entry key="..\:/Work/dotkom3-refer-android-d965457e80ff/dotkom3-refer-android-d965457e80ff/app/src/main/res/layout/activity_enter_otp.xml" value="0.15427350427350428" />
+        <entry key="..\:/Work/dotkom3-refer-android-d965457e80ff/dotkom3-refer-android-d965457e80ff/app/src/main/res/layout/activity_main.xml" value="0.15427350427350428" />
+        <entry key="..\:/Work/dotkom3-refer-android-d965457e80ff/dotkom3-refer-android-d965457e80ff/app/src/main/res/layout/activity_signup_notification.xml" value="0.15433946130825138" />
+        <entry key="..\:/Work/dotkom3-refer-android-d965457e80ff/dotkom3-refer-android-d965457e80ff/app/src/main/res/layout/activity_signup_with_phone.xml" value="0.2790328973444312" />
+        <entry key="..\:/Work/dotkom3-refer-android-d965457e80ff/dotkom3-refer-android-d965457e80ff/app/src/main/res/layout/activity_splash.xml" value="0.18802083333333333" />
+        <entry key="..\:/Work/dotkom3-refer-android-d965457e80ff/dotkom3-refer-android-d965457e80ff/app/src/main/res/layout/activity_term_of_use.xml" value="0.25" />
+        <entry key="..\:/Work/dotkom3-refer-android-d965457e80ff/dotkom3-refer-android-d965457e80ff/app/src/main/res/layout/activity_user_type.xml" value="0.18802083333333333" />
+        <entry key="..\:/Work/dotkom3-refer-android-d965457e80ff/dotkom3-refer-android-d965457e80ff/app/src/main/res/layout/activity_view_contract.xml" value="0.33" />
+        <entry key="..\:/Work/dotkom3-refer-android-d965457e80ff/dotkom3-refer-android-d965457e80ff/app/src/main/res/layout/activity_welcome.xml" value="0.15433946130825138" />
+        <entry key="..\:/Work/dotkom3-refer-android-d965457e80ff/dotkom3-refer-android-d965457e80ff/app/src/main/res/layout/welcome_adapter.xml" value="0.3009833262077811" />
+      </map>
+    </option>
+  </component>
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
